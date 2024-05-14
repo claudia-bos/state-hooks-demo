@@ -16,7 +16,7 @@ export default function MissingKey() {
     <div>
       <h2>Rate these emojis!</h2>
       {emojis.map((emoji) => (
-        <li className="emoji-item">
+        <li key={emoji.id} className="emoji-item">
           {emoji.emoji}
           <select>
             <option>Bad</option>
